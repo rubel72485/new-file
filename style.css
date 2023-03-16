@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #34495E;
+    border-bottom: 4px solid #193a5c;
+}
+nav ul{
+    display: flex;
+    margin-right: 50px;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0px 8px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8px 11px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    background-color: black;
+    border-radius: 8px;
+}
+nav div h2{
+    margin-left: 50px;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+#ckinp{
+    display: none;
+}
+.iconber{
+    display: none;
+}
+
+/* header part code star here */
+
+.bg-video{
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-video-wr{
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+}
+
+
+
+
+/* manuber media quriye code start here */
+
+@media only screen and (max-width: 940px) {
+    nav ul{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #34495E;
+        text-align: center;
+        flex-direction: column;
+        padding-top: 50px;
+        transition: all 0.5s ease;
+    }
+    nav ul li{
+        margin-top: 50px;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    nav ul li a:hover{
+        background: none;
+        color: yellowgreen;
+    }
+    .iconber{
+        display: block;
+        margin-right: 30px;
+        font-size: 25px;
+        color: white;
+    }
+    #ckinp:checked ~ ul{
+        left: 0;
+    }
+    #ckinp:checked ~ .iconber i::before{
+        content: '\f00d';
+    }
+
+}
+
+/* section one code start here */
+
+#section-one{
+    background-color: #EAF1F1;
+    padding: 50px 0;
+}
+.section-one-single-item-parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.single-items-img img{
+    margin-left: -200px;
+}
+.single-items-text {
+    margin-right: 90px;
+}
+.single-items-text h2{
+    font-size: 60px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+.single-items-text h5{
+    font-size: 20;
+    margin-left: 30px;
+    text-align: justify;
+    font-weight: bold;
+    color: gray;
+    margin-top: 35px;
+}
+.section-one-twotext{
+    display: flex;
+    align-items: center;
+    margin: 100px 0;
+    margin-left: 30px;
+}
+.section-one-twotext a{
+    text-decoration: none;
+    color: white;
+    background-color: #40a3f3;
+    padding: 9px 60px;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.section-one-twotext a:hover{
+    background-color: #0078D7;
+}
+.section-one-twotext b{
+    background-color: #F5DC65;
+    font-weight: 700;
+}
+
+/* media quriye code start here */
+
+@media only screen and (max-width: 688px) {
+    #section-one{
+        background-color: #D5F5E3;
+        padding: 50px 0;
+    }
+    .section-one-single-item-parent{
+        display: block;
+    }
+    .single-items-img img{
+        margin-left: -100px;
+        width: 100%;
+        height: 30vh;
+    }
+    .section-one-twotext{
+        display: block;
+        margin: 30px auto;
+        display: block;
+    }
+    .single-items-text h2{
+        font-size: 25px;
+        font-weight: bold;
+        word-spacing: 0.4em;
+    }
+    .single-items-text h5{
+        font-size: 18px;
+        font-weight: bold;
+        color: gray;
+        margin-top: 10px;
+    }
+    .single-items-text {
+        margin-right: 30px;
+    }
+    .section-one-twotext a{
+        background-color: #40a3f3;
+        padding: 9px 20px;
+        display: inline-block;
+    }
+    .section-one-twotext{
+        display: inline-block;
+        margin: 25px 0;
+        margin-left: 30px;
+    }
+    .section-one-twotext b{
+        background-color: #F5DC65;
+        font-weight: 700;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    .section-one-twotext p{
+        display: inline-block;
+        margin-top: 15px;
+    }
+}
